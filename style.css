@@ -47,7 +47,8 @@ a, a:visited, a:hover, a:active {
 
     background-color: #483434;
     color: white;
-    padding: 16px;
+    padding-left: 140px;
+    padding-right: 140px;
 }
 
 .navbar {
@@ -78,6 +79,8 @@ a, a:visited, a:hover, a:active {
     display: flex;
     background-color: #483434;
     color: white;
+    padding-left: 140px;
+    padding-right: 140px;
 
     /* outline: solid firebrick 2px; */
 }
@@ -115,7 +118,8 @@ a, a:visited, a:hover, a:active {
 
     height: 250px;
     width: 750px;
-    margin: 20px;
+    margin-left: 50px;
+    margin-bottom: 50px;
     flex-shrink: 0;
 }
 
@@ -126,34 +130,46 @@ a, a:visited, a:hover, a:active {
 
 .main-content-container {
     display: flex;
+    text-align: center;
     flex: 1;
-    flex-flow: row wrap;
     
     background-color: #FFF3E4;
-    height: 1500px;
+    height: 100px;
+    padding-left: 140px;
+    padding-right: 140px;
 }
 
 .main-content-main-text {
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
     justify-content: center;
 
+    margin-bottom: 32px;
     font-size: 36px;
     font-weight: 700px;
 }
 
-.cards, .card {
+.cards {
     display: flex;
-    flex-direction: row;
-    border: 20px;
+    align-content: center;
+    justify-content: center;
+    gap: 52px;
+    
+}
+
+.card {
+    margin: 20px;
 }
 
 .card>img {
     display: flex;
     flex-direction: row;
     outline: solid firebrick 2px;
-    max-width: 250px;
+    max-width: 300px;
+}
+
+.card-text {
+    font-weight: 700;
+    font-size: 18px;
 }
 
 /* END OF MAIN CONTENT CONTAINER */
@@ -166,9 +182,12 @@ a, a:visited, a:hover, a:active {
     background-color: #EED6C4;
 
     height: 500px;
+    padding-left: 140px;
+    padding-right: 140px;
 }
 
 .text-one {
+    font-size: 36px;
     font-style: italic;
 }
 
@@ -177,3 +196,28 @@ a, a:visited, a:hover, a:active {
 }
 
 /* END OF QUOTE CONTAINER */
+
+/* START OF NEWSLETTER CONTAINER */
+
+.newsletter-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 36px;
+    height: 500px;
+    padding-left: 140px;
+    padding-right: 140px;
+}
+
+.newsletter-container-left {
+    outline: solid firebrick 2px;
+
+    display: flex;
+}
+
+.newsletter-container-right {
+    display: flex;
+}
+
+/* END OF NEWSLETTER CONTAINER */
