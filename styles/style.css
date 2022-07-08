@@ -257,7 +257,7 @@ nav .title {
     gap: 1.25rem;
 }
 
-.newsletter-right>button {
+.newsletter-right a>button {
     appearance: none;
     background-color: #EED6C4;
     border: 2px solid #EED6C4;
