@@ -1,3 +1,316 @@
-body {
+* {
     font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    background-color: #FFF3E4;
+    color: #483434;
+
+    min-height: 100vh;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+header {
+    background-color: #483434;
+    color: #FFF3E4;
+
+    padding: 1.875rem;
+
+    /* outline: solid red 6px; */
+}
+
+nav {
+    display: flex;
+    flex-flow: row wrap;
+    flex: auto;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 0rem;
+    margin: 1.25rem;
+}
+
+nav .title {
+    text-transform: uppercase;
+
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.links ul {
+    display: flex;
+    flex-flow: row wrap;
+    text-transform: uppercase;
+
+    padding: 0;
+    margin: 0;
+    border: 0;
+    gap: 0.875rem;
+    font-size: 23px;
+    font-weight: 500;
+}
+
+.top-container {
+    display: flex;
+    justify-content: space-between;
+
+    margin-top: 3.75rem;
+    padding: 1.25rem;
+    gap: 4.063rem;
+}
+
+.head-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.head-container .main-text {
+    margin-bottom: 1.25rem;
+    padding: 0;
+    margin: 0;
+}
+
+.secondary-text {
+    font-size: 18px;
+    color: rgb(216, 216, 216)
+}
+
+.head-img {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.head-img>img {
+    align-self: center;
+    justify-content: center;
+
+    height: auto;
+    max-width: 56.25rem;
+    margin-left: 1.25rem;
+
+    border: #FFF3E4 solid 10px;
+}
+
+
+.listen-button {
+  appearance: none;
+  background-color: #FFF3E4;
+  border: 2px solid #483434;
+  border-radius: 15px;
+  box-sizing: border-box;
+  color: #483434;
+  cursor: pointer;
+  display: inline-block;
+  font-family: Roobert,-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  font-size: 16px;
+  font-weight: 600;
+  line-height: normal;
+  margin: 0;
+  min-height: 60px;
+  min-width: 0;
+  outline: none;
+  padding: 16px 24px;
+  text-align: center;
+  text-decoration: none;
+  transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: 100%;
+  will-change: transform;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+.listen-button:disabled {
+  pointer-events: none;
+}
+
+.listen-button:hover {
+  box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+  transform: translateY(-2px);
+}
+
+.listen-button:active {
+  box-shadow: none;
+  transform: translateY(0);
+}
+
+.maincontent-container {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+
+    text-align: center;
+
+    padding: 1.25rem;
+    margin-bottom: 3.125rem;
+}
+
+#maincontent-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+
+    font-size: 50px;
+    font-weight: 700;
+}
+
+.cards {
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+    flex-grow: 1;
+
+    padding: 0;
+    margin-top: 0px;
+    gap: 20px;
+}
+
+.card {
+    flex-direction: row;
+}
+
+.card>img {
+    height: auto;
+    max-width: 19.375rem;
+
+    border: 10px solid #6B4F4F;
+}
+
+.card-text {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    font-size: 25px;
+
+    margin: 0;
+    padding: 0;
+}
+
+.quote-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    padding: 8.75rem;
+
+    font-style: italic;
+    font-size: 48px;
+
+    background-color: #EED6C4;
+}
+
+.newsletter-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: #FFF3E4;
+
+    padding: 8.75rem;
+}
+
+.newsletter-container {
+    display: flex;
+    flex-flow: row wrap;
+    padding: 4rem;
+    border-radius: 25px;
+
+    background-color: #6B4F4F;
+}
+
+.newsletter-left {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+
+    padding: 0.625rem;
+    margin-right: 1.875rem;
+
+    font-weight: 500;
+}
+
+.newsletter-left>p {
+    margin-top: 0rem;
+    color: #e9dac9;
+}
+
+.newsletter-right {
+    display: flex;
+    flex-flow: row wrap;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+
+    padding: 1.25rem;
+    gap: 1.25rem;
+}
+
+.newsletter-right>button {
+    appearance: none;
+    background-color: #EED6C4;
+    border: 2px solid #EED6C4;
+    border-radius: 15px;
+    box-sizing: border-box;
+    color: #483434;
+    cursor: pointer;
+    display: inline-block;
+    font-family: Roobert,-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+    font-size: 16px;
+    font-weight: 600;
+    line-height: normal;
+    margin: 0;
+    min-height: 60px;
+    min-width: 0;
+    outline: none;
+    padding: 16px 24px;
+    text-align: center;
+    text-decoration: none;
+    transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    width: 100%;
+    will-change: transform;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+    
+.newsletter-right>button:disabled {
+    pointer-events: none;
+}
+    
+.newsletter-right>button:hover {
+    box-shadow: #483434 0 8px 15px;
+    transform: translateY(-2px);
+}
+    
+.newsletter-right>button:active {
+    box-shadow: none;
+    transform: translateY(0);
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 3rem;
+
+    background-color: #483434;
+
+    text-align: center;
+    font-size: 20px;
+    color:#FFF3E4
 }

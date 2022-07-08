@@ -6,7 +6,7 @@
         <title>Kendrick Lamar</title>
         <meta name="description" content="A webpage dedicated to Kendrick Lamar">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="./style.css">
+        <link rel="stylesheet" href="./styles/style.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,400;0,500;0,700;1,200;1,400;1,500;1,700&display=swap" rel="stylesheet">
@@ -19,31 +19,36 @@
     <header class="dark-background">
 
         <nav> 
-            <div>
-               <span class="navbar-maintext"><strong>Kendrick Lamar</strong></span> 
-            </div>
+            <span class="title"><a href=".">Kendrick Lamar</a></span> 
             <span class="links">
                 <ul>
-                    <a>Home</a>
-                    <a>Merch</a>
-                    <a>Music</a>
+                    <a href=".">Home</a>
+                    <a href="https://open.spotify.com/artist/2YZyLoL8N0Wb9xBt1NhZWg">Music</a>
+                    <a href="https://www.theodinproject.com/">Create</a>
                 </ul>
             </span>
         </nav>
 
-        <div class="first-container">
+        <div class="top-container">
 
-            <div class="head-container">
-              <h1 class="head-container-maintext">MR MORALE AND THE BIG STEPPERS OUT NOW</h1>
-              <p class="head-container-secondarytext">
-                Kendrick Lamar's fifth and final TDE album, <strong>Mr. Morale and the Big Steppers</strong>, 
-                is split into two parts, each comprising nine songs, 
-                all of which serve to illuminate his continually evolving worldview.
-              </p>
-              <button class="listen-button">Listen Now</button>
+            <div>
+                <div class="head-container">
+                    <h1 class="main-text">MR MORALE AND THE BIG STEPPERS OUT NOW</h1>
+                    <p class="secondary-text">
+                     More than five years since his last solo full-length LP, Kendrick Lamar (or now known as <strong><i>Oklama</i></strong>) is back with
+                     a double-album in <strong>Mr Morale and the Big Steppers.</strong> <br> <br> Channeling his thoughts, Oklama painstakingly 
+                     tackles his shortcomings, his relationships with money, hypocrisy on white women, his relationship with 
+                     his father, the limits of his loyalty, love in the context of heteronormative relationships, motivation, 
+                     embedded responsibility, gender, and generational trauma. Dense, thought-provoking, and multilayered across innovative beats. 
+                     <br>It's a difficult listen, but ultimately human.
+                    </p>  
+                    <br>
+                    <a href="https://open.spotify.com/album/1atjqOZTCdrjxjMyCPZc2g"><button class="listen-button" role="button">Listen Now</button></a>
+                </div>
+                
             </div>
-
-            <div class="head-container-img">
+            
+            <div class="head-img">
               <img src="./images/kendrick-header-wide.jpeg" alt="Kendrick Lamar sitting in couch" id="main-header-image">
             </div>
 
@@ -55,28 +60,36 @@
 
     <div class="maincontent-container">
 
-        <h1>Discover<h1>
+        <h1 id="maincontent-text">Discover<h1>
 
         <div class="cards">
-            <div class="card">
-                <img src="./images/gkmc.jpg" alt="Good kid, Mad City album cover">
-                <div class="card-text"><strong>good kid, m.A.A.d city</strong></div>
-            </div> 
+            <a href="https://open.spotify.com/album/748dZDqSZy6aPXKcI9H80u">
+                <div class="card">
+                    <img src="./images/gkmc.jpg" alt="Good kid, Mad City album cover">
+                    <div class="card-text"><strong>good kid, m.A.A.d city</strong></div>
+                </div> 
+            </a>
 
-            <div class="card">
-                <img src="./images/tpab.jpg" alt="To Pimp a Butterfly album cover">
-                <div class="card-text"><strong>To Pimp A Butterfly</strong></div>
-            </div>
+            <a href="https://open.spotify.com/album/7ycBtnsMtyVbbwTfJwRjSP">
+                <div class="card">
+                    <img src="./images/tpab.jpg" alt="To Pimp a Butterfly album cover">
+                    <div class="card-text"><strong>To Pimp A Butterfly</strong></div>
+                </div>
+            </a>
 
-            <div class="card">
-                <img src="./images/DAMN.jpg" alt="DAMN. album cover">
-                <div class="card-text"><strong>DAMN.</strong></div>
-            </div>
+            <a href="https://open.spotify.com/album/4eLPsYPBmXABThSJ821sqY">
+                <div class="card">
+                    <img src="./images/DAMN.jpg" alt="DAMN. album cover">
+                    <div class="card-text"><strong>DAMN.</strong></div>
+                </div>
+            </a>
 
-            <div class="card">
-                <img src="./images/mr-morale.jpeg" alt="Mr. Morale and the Big Steppers album cover">
-                <div class="card-text"><strong>Mr. Morale and the Big Steppers</strong></div>
-            </div>
+            <a href="https://open.spotify.com/album/79ONNoS4M9tfIA1mYLBYVX">
+                <div class="card">
+                    <img src="./images/mr-morale.jpeg" alt="Mr. Morale and the Big Steppers album cover">
+                    <div class="card-text"><strong>Mr Morale and <br> the Big Steppers</strong></div>
+                </div>
+            </a>
         </div>    
 
     </div>
@@ -89,21 +102,21 @@
         </div>
 
     <!-- start of newsletter container -->
-
+    <div class="newsletter-section">
         <div class="newsletter-container">
             <div class="newsletter-left">
-                <p>Subscribe for the latest news regarding Kendrick Lamar</p>
-                <h2>Free Subscription. Unsubscribe anytime. No Bullshit. I am not your savior.</h2>
+                <h2>Subscribe for the latest news regarding Oklama</h2>
+                <p>Free Subscription. Unsubscribe anytime. No Spam. No Bullshit. I am not your savior.</p>
             </div>
             <div class="newsletter-right">
                 <button>Let's Get This Shit</button>
             </div>
         </div>
-
+    </div>
     <!-- start of footer container -->
 
         <footer>
-            <span>A sample project made by <a href="https://github.com/hewhohuntsdragons/">hewhohuntsdragons</a>, image copyright and owned by TDE and PgLang.</span>
+            <span>A landing page project made by <a href="https://github.com/hewhohuntsdragons/"><strong>hewhohuntsdragons</strong></a>. <br> <br> images are copyrighted and owned by TDE and PgLang respectively.</span>
         </footer>
 
     </body>
